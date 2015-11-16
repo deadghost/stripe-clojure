@@ -1,6 +1,8 @@
 stripe-clojure
 ================================
 
+This is a fork of [prachetasp/stripe-clojure](https://github.com/prachetasp/stripe-clojure). The only difference is that I uncommented out the sections involving charges to make them an available resource. It's forked so I can quickly make changes, push to clojars, and pull from it immediately.
+
 stripe-clojure is intended as a lightweight wrapper around the [Stripe API](https://stripe.com/docs/api "Stripe API Documentation")
 
 Usage
@@ -11,7 +13,7 @@ stripe-clojure attempts to leverage functional style by allowing the user to exe
 The first step is to add the library to the project.clj file:
 
 ```
-[prachetasp/stripe-clojure "1.0.0"]
+[deadghost/stripe-clojure "1.1.0"]
 ```
 
 Everything is located in the `stripe-clojure.core` namespace. Add to your namespace declaration:
@@ -36,7 +38,7 @@ These operations accept a map of a map of data keyed by the resource. For exampl
 {:customers {:customer_id "cus_5An5UPQPrSaS9e", :email "mrclojure@stripetest.com", :description "customer test"}}
 ```
 
-Currently supported resources are: `cards`, `customers`, `events`, `invoices`, `plans`, `subscriptions`, and `tokens`
+Currently supported resources are: `cards`, `customers`, `events`, `invoices`, `plans`, `subscriptions`, `tokens`, and `charges`.
 
 Putting it all together to update an existing user:
 
