@@ -1,4 +1,4 @@
-(defproject deadghost/stripe-clojure "1.0.0"
+(defproject deadghost/stripe-clojure "1.1.0"
   :description "Clojure Stripe Library"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
