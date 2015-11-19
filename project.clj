@@ -5,4 +5,5 @@
   :scm {:name "git"
         :url "https://github.com/deadghost/stripe-clojure"}
   :dependencies [[org.clojure/clojure "1.7.0"]
-		 [clj-http "2.0.0"]])
+		 [clj-http "2.0.0"]]
+  :signing {:gpg-key "0982F75F"})
